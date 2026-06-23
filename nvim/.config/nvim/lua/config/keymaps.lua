@@ -18,6 +18,8 @@ vim.diagnostic.config {
   },
 }
 
+vim.keymap.set('n', '<leader>pv', ':Ex<CR>', { desc = 'Open netrw'} )
+
 vim.keymap.set('n', '<leader><bar>', '<cmd>botright vnew<CR>', { desc = 'Splits a new buffer to right' })
 
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -58,3 +60,4 @@ end, { desc = '[B]uffer [D]elete' })
 for _, key in ipairs { '<Left>', '<Right>', '<Up>', '<Down>' } do
   vim.keymap.set({ 'n', 'v' }, key, '<Nop>', { silent = true })
 end
+

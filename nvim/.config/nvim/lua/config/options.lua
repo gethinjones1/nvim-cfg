@@ -16,6 +16,12 @@ vim.schedule(function() vim.o.clipboard = 'unnamedplus' end)
 
 vim.o.breakindent = true
 
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.list = false
+
 vim.o.undofile = true
 
 vim.o.ignorecase = true
@@ -30,8 +36,7 @@ vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { trail = '·', nbsp = '␣' }
 
 vim.o.inccommand = 'split'
 
